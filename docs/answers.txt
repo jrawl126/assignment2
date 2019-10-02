@@ -1,0 +1,40 @@
+a) Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 733 bytes | 733.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/jrawl126/assignment2.git
+   f4975e5..393589e  master -> master
+
+b)There have been 9 commits in this repo so far, the command used is 
+	git rev-list --count HEAD
+
+c) the .gitignore file was last modified Wed Sep 25 18:13:30 2019. Command use:
+	git log .gitignore
+
+d) Two reasons that branches are used in git are 1) to keep a stable branch while
+   debugging on another branch and 2) to allow for multiple people to work on one 
+   project without effecting each other during development.
+
+e) Git log shows use you a full history of your repo, while git status will only
+   show the differences between the current dir and staging area.
+
+f) You would use command:
+	git log --follow Vehicle.h  
+
+g) You would use command:
+	git log --grep=file
+
+h) I) Inheritance is when a subclass also has the atributes of its parent(s) class.
+   II) Polymophism is when an object can take many forms, an example of this is the
+       object class in python.
+   III) Encapsulation is when data attributes are restricted to only the asscess that
+	is needed, an example being public and private in C++  
+
+I) The main differnece between these two workflows is that Integration manager handles
+   pushes from all the devlopers, whereas the Lieutenants only work on the code from 
+   some of the devlopers. 
+
+J) It would be easier for multiple lieutenants to manage the code from 100 devlopers
+   rather then having one person trying manage all 100 people. 
