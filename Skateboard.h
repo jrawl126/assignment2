@@ -1,5 +1,5 @@
 //
-// Created by Esteban Parra on 9/5/19.
+// Created by John Rawley on 10/3/19.
 //
 
 #ifndef DRIVINGSIMULATOR_SKATEBOARD_H
