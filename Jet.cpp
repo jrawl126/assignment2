@@ -4,6 +4,7 @@
 
 #include "Jet.h"
 #include <cstdlib>
+#include <ctime>
 
 Jet::Jet() {
     numberOfEngines = 1;
@@ -33,6 +34,7 @@ void Jet::setNumberOfEngines(int number) {
 }
 
 double Jet::mileageEstimate(double time) {
+    srand(time(NULL));
     int temp = (rand() % 61) + 40;
     double mileage = temp;
     if (fuelType == "Rocket" && numberOfEngines > 2) {
