@@ -6,7 +6,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <cmath>
-Turboprop::TurboProp() {
+TurboProp::TurboProp() {
     grossWeight = 2200; // IN LBS
     setBrand("Custom");
     setModel("VTx");
@@ -33,14 +33,14 @@ void TurboProp::setGrossWeight(int number) {
       grossWeight = 2200;
 }
 
-double TurboProp::mileageEstimate(double time) {
+double TurboProp::mileageEstimate(double time1) {
     srand(time(NULL));
     int temp = (rand() % 41) + 30;
-    double mileage = temp * (pow(grossWeight,2)/(grossWeight-time));
+    double mileage = temp * (pow(grossWeight,2)/(grossWeight-time1));
     return mileage;
 }
 
 string TurboProp::toString() {
     return "-> TurboProp\n" + PoweredVehicle::toString() + "\n\tGross Weight: "+
-           getEngineSize();
+           to_string(getGrossWeight());
 }
