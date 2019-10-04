@@ -18,7 +18,7 @@ public:
     explicit TurboProp(string brand, string model, string fuelType,
                  int grossWeight);
 
-    virtual ~Turboprop();
+    virtual ~TurboProp();
     int getGrossWeight();
     void setGrossWeight(int grossWeight);
     virtual double mileageEstimate(double time);
