@@ -41,6 +41,6 @@ double TurboProp::mileageEstimate(double time) {
 }
 
 string TurboProp::toString() {
-    return "-> TurboProp\n" + PoweredVehicle::toString() + "\n\tNumber of Engines: " +
+    return "-> TurboProp\n" + PoweredVehicle::toString() + "\n\tGross Weight: "+
            getEngineSize();
 }
