@@ -7,34 +7,43 @@ remote: Resolving deltas: 100% (2/2), completed with 1 local object.
 To https://github.com/jrawl126/assignment2.git
    f4975e5..393589e  master -> master
 
-b)There have been 9 commits in this repo so far, the command used is 
+b)There have been 9 commits in this repo so far, the command used is
 	git rev-list --count HEAD
 
 c) the .gitignore file was last modified Wed Sep 25 18:13:30 2019. Command use:
 	git log .gitignore
 
 d) Two reasons that branches are used in git are 1) to keep a stable branch while
-   debugging on another branch and 2) to allow for multiple people to work on one 
+   debugging on another branch and 2) to allow for multiple people to work on one
    project without effecting each other during development.
 
 e) Git log shows use you a full history of your repo, while git status will only
    show the differences between the current dir and staging area.
 
 f) You would use command:
-	git log --follow Vehicle.h  
+	git log --follow Vehicle.h
 
 g) You would use command:
 	git log --grep=file
 
-h) I) Inheritance is when a subclass also has the atributes of its parent(s) class.
+h) I) Inheritance is when a subclass also has the attributes of its parent(s) class.
    II) Polymophism is when an object can take many forms, an example of this is the
        object class in python.
-   III) Encapsulation is when data attributes are restricted to only the asscess that
-	is needed, an example being public and private in C++  
+   III) Encapsulation is when data attributes are restricted to only the access that
+	is needed, an example being public and private in C++
 
-I) The main differnece between these two workflows is that Integration manager handles
-   pushes from all the devlopers, whereas the Lieutenants only work on the code from 
-   some of the devlopers. 
+I) The main difference between these two workflows is that Integration manager handles
+   pushes from all the developers, whereas the Lieutenants only work on the code from
+   some of the developers.
 
-J) It would be easier for multiple lieutenants to manage the code from 100 devlopers
-   rather then having one person trying manage all 100 people. 
+J) It would be easier for multiple lieutenants to manage the code from 100 developers
+   rather than having one person trying manage all 100 people.
+
+
+OOP Question:
+The Driving simulator is using both Polymophism and Encapsulation. Polymophism
+can be seen in that each vehicle has a toString function, but depending on what
+type of object is calling it, the results will be different. Also Encapsulation
+can be seen with the protected values such as numberOfEngines with the Jet class
+which keeps the user from directly messing with its value and possibly breaking
+the program. 
