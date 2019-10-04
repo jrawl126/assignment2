@@ -16,7 +16,7 @@ public:
     TurboProp();
 
     explicit TurboProp(string brand, string model, string fuelType,
-                 int grossWeight);
+                 int grossWeight=2200);
 
     virtual ~TurboProp();
     int getGrossWeight();
