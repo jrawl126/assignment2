@@ -33,7 +33,7 @@ void Jet::setNumberOfEngines(int number) {
       numberOfEngines = 1;
 }
 
-double Jet::mileageEstimate(double time) {
+double Jet::mileageEstimate(double time1) {
     srand(time(NULL));
     int temp = (rand() % 61) + 40;
     double mileage = temp;
@@ -44,6 +44,6 @@ double Jet::mileageEstimate(double time) {
 }
 
 string Jet::toString() {
-    return "-> Jet\n" + PoweredVehicle::toString() + "\n\tNumber of Engines: " +
-           getEngineSize();
+    return "-> Jet\n"+PoweredVehicle::toString()+"\n\tNumber of Engines: "+
+    to_string(getNumberOfEngines());
 }
