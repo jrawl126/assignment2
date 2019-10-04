@@ -7,15 +7,15 @@
 
 #include "PoweredVehicle.h"
 
-class Turboprop : public PoweredVehicle {
+class TurboProp : public PoweredVehicle {
 
 private:
     int grossWeight;
 
 public:
-    Turboprop();
+    TurboProp();
 
-    explicit Turboprop(string brand, string model, string fuelType,
+    explicit TurboProp(string brand, string model, string fuelType,
                  int grossWeight);
 
     virtual ~Turboprop();
